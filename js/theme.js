@@ -411,6 +411,5 @@
 })(jQuery);
 
 function myFunction() {
-  alert("asdasd");
-  //   window.dataLayer.push({ event: "clickPhonenumber" });
+  window.dataLayer.push({ event: "clickPhonenumber" });
 }
