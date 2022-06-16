@@ -78,7 +78,7 @@
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
-        <a href="" id="logo" class="navbar-brand">Y-Folio</a>
+        <a href="" id="logo" class="navbar-brand" onclick="dataLayer.push({'event': 'logo_click'});">Y-Folio</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
           <span class="ti-menu"></span>
         </button>
@@ -133,9 +133,7 @@
             <li><b>Gender:</b> Male</li>
           </ul>
           <button 
-            class="btn btn-theme-outline" 
-            onclick="dataLayer.push({'event': 'login'});"
-          >
+            class="btn btn-theme-outline">
             Download CV
           </button>
         </div>
