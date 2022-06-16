@@ -123,7 +123,17 @@
             <li><b>Age:</b> 31</li>
             <li><b>Gender:</b> Male</li>
           </ul>
-          <button class="btn btn-theme-outline">Download CV</button>
+          <button 
+            class="btn btn-theme-outline" 
+            onclick="dataLayer.push({
+              'event': 'Pageview',
+              'pagePath': 'https://tranquocy.github.io/',
+              'pageTitle': 'Download event',
+              'visitorType': 'customer'
+             });"
+          >
+            Download CV
+          </button>
         </div>
       </div>
     </div>
