@@ -67,6 +67,20 @@ $(function() {
   $('[data-toggle="selected"]').toggleSelected();
 });
 
+document.getElementById("download-csv").addEventListener("click", function () {
+
+  gtag("event", "download-csv", {
+    currency: "USD",
+    value: 7.77,
+    items: [
+      {
+        item_id: "SKU_12345",
+        item_name: "Stan and Friends Tee",
+      }
+    ]
+  });
+});
+
 $(document).ready(function () {
   
   /* Sticky nvigation */
